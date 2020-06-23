@@ -1,0 +1,31 @@
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1)
+}
+
+.bg-destaque {
+    padding: 10px;
+    background: #f5f3f3;
+    margin: 20px 0px;
+}
+
+.bg-destaque button{
+    padding: 3px 11px;
+}
+.bg-destaque select{
+    padding: 4px;
+    width: 75%;
+}
+
+.btn-search--clear-js{
+    margin-top: 20px;
+}
+.dropdown-menu {
+    padding: 10px;
+}

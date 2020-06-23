@@ -1,13 +1,14 @@
 ![Capa](capa.png)
 
-![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/glauberborges/MeusPontos)
+
+![PHP Version (GitHub/Bitbucket)](https://img.shields.io/badge/PHP-7.3.19-brightgreen)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/glauberborges/MeusPontos/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/glauberborges/MeusPontos/?branch=master)
 ![Issues](https://img.shields.io/github/issues/glauberborges/MeusPontos?color=34CB79)
 ![GitHub top language](https://img.shields.io/github/languages/top/glauberborges/MeusPontos?color=34CB79)
-![Scrutinizer code quality (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/quality/b/glauberborges/MeusPontos)
 ![by Glauber Borges](https://img.shields.io/badge/%20by-Glauber_Borges-informational?color=34CB79)
-![Github - Glauber Borges](https://img.shields.io/badge/Github--%23F8952D?style=social&logo=github)
-![Email - Glauber Borges](https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail)
-![Fale comigo no whatsapp - Glauber Borges](https://img.shields.io/badge/Whatsapp--%23F8952D?style=social&logo=whatsapp)
+[![Github - Glauber Borges](https://img.shields.io/badge/Github--%23F8952D?style=social&logo=github)](https://github.com/glauberborges)
+[![Email - Glauber Borges](https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail)](mailto:glauber.borges1@gmail.com)
+[![Fale comigo no whatsapp - Glauber Borges](https://img.shields.io/badge/Whatsapp--%23F8952D?style=social&logo=whatsapp)](https://api.whatsapp.com/send?phone=15996121224)
 
 
 [ 💻 Projeto](#-projeto) |

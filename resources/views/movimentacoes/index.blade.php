@@ -17,7 +17,7 @@
                         <div class="row">
                             <div class="col-md-6"> <h3 class="box-title">Listagem das Movimentações</h3></div>
                             <div class="col-md-6 text-right">
-                                <a href="{{route('funcionarios.novo')}}" class="btn bg-olive margin"><i class="fa fa-plus"></i> Inserir </a>
+                                <a href="{{route('movimentacoes.novo')}}" class="btn bg-olive margin"><i class="fa fa-plus"></i> Inserir </a>
                             </div>
                         </div>
                     </div>
@@ -35,11 +35,12 @@
 
                     <div class="bg-destaque">
                         <div class="row">
-                            <div class="col-md-4"> <p>Buscar pelo nome </p> <input type="text"  class="input-search--nome-js">  <button class="btn btn-info btn-search--nome-js">Buscar</button> </div>
+                            <div class="col-md-4"> <p>Buscar por funcionário </p> <input type="text"  class="input-search--nome-js">  <button class="btn btn-info btn-search--nome-js">Buscar</button> </div>
                             <div class="col-md-4"> <p>Buscar por data </p> <input type="date"  class="input-search--date-js">  <button class="btn btn-info btn-search--date-js">Buscar</button> </div>
                             <div class="col-md-4"> <p>Buscar por tipo </p> 
                                 {{--<input type="text"  class="input-search--tipo-js">--}}
                                 <select name="" id="" class="form-controlx input-search--tipo-js">
+                                    <option value=""> Selecione </option>
                                     <option value="entrada" >Entrada</option>
                                     <option value="saida">Saída</option>
                                 </select>
@@ -62,7 +63,6 @@
                             <th>funcionário</th>
                             <th>Observação</th>
                             <th>Data</th>
-                            <th>Ações</th>
                         </tr>
                         </thead>
 
@@ -89,22 +89,6 @@
                                 </td>
                                 <td>
                                     {{ date_format($item->updated_at,"Y-m-d") }}
-                                </td>
-
-
-
-                                <td width="80">
-                                    <div class="btn-group">
-                                        <a href="{{route('funcionarios.editar', $item->id)}}" class="btn btn-info"> <i class="fa fa-edit"></i></a>
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                                                <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="{{route('funcionarios.extrato', $item->id)}}">Extrato</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </td>
                             </tr>
                         @endforeach
@@ -159,7 +143,7 @@
                     },
                     columnDefs: [
                         {
-                            "targets": [7],
+                            "targets": [5],
                             "visible": true,
                             "searchable": false,
                             "orderable": false

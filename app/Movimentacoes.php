@@ -2,12 +2,18 @@
 
 namespace App;
 
+use App\Traits\Uuid;
 use Illuminate\Database\Eloquent\Model;
 
 class Movimentacoes extends Model
 {
+    use Uuid;
 
     protected $table = "movimentacoes";
+
+    public $incrementing = false;
+
+    public $keyType = 'string';
 
     protected $primaryKey = 'id';
 

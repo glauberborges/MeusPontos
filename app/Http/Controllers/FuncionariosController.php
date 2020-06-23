@@ -59,12 +59,11 @@ class FuncionariosController extends Controller
         }else{
 
             $funcionario = new Funcionarios();
-            $funcionario->nome_completo = $request->nome_completo;
-            $funcionario->login = $request->login;
-            $funcionario->senha = Hash::make($request->senha);
-            $funcionario->saldo_atual = (isset($request->saldo_atual) ? $request->saldo_atual : 0);
-            $funcionario->user_id = Auth::user()->id;
-
+            $funcionario->nome_completo     = $request->nome_completo;
+            $funcionario->login             = $request->login;
+            $funcionario->senha             = Hash::make($request->senha);
+            $funcionario->saldo_atual       = (isset($request->saldo_atual) ? $request->saldo_atual : 0);
+            $funcionario->user_id           = Auth::user()->id;
             $funcionario->save();
 
         }
@@ -101,10 +100,10 @@ class FuncionariosController extends Controller
         }else{
 
             $funcionario = Funcionarios::find($request->id);
-            $funcionario->nome_completo = $request->nome_completo;
-            $funcionario->login = $request->login;
-            $funcionario->senha = Hash::make($request->senha);
-            $funcionario->saldo_atual = $request->saldo_atual;
+            $funcionario->nome_completo     = $request->nome_completo;
+            $funcionario->login             = $request->login;
+            $funcionario->senha             = Hash::make($request->senha);
+            $funcionario->saldo_atual       = $request->saldo_atual;
             $funcionario->save();
 
         }

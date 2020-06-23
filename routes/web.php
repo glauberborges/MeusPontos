@@ -37,11 +37,10 @@ Route::group(['middleware' => ['web','auth'], 'prefix' => 'painel/funcionarios']
 Route::group(['middleware' => ['web','auth'], 'prefix' => 'painel/movimentacoes'], function(){
 
     Route::get('/', 'MovimentacoesController@index')->name('movimentacoes');
-    Route::get('/extrato/{id?}', 'MovimentacoesController@extrato')->name('movimentacoes.extrato');
     Route::get('/novo', 'MovimentacoesController@novoForm')->name('movimentacoes.novo');
-    Route::get('/editar/{movimentacoes}', 'MovimentacoesController@editarForm')->name('movimentacoes.editar');
+    Route::get('/editar/{id}', 'MovimentacoesController@editarForm')->name('movimentacoes.editar');
     Route::post('/novo', 'MovimentacoesController@inserir')->name('movimentacoes.inserir');
-    Route::post('/edicao', 'MovimentacoesController@edicao')->name('movimentacoes.edicao');
+//    Route::post('/edicao', 'MovimentacoesController@edicao')->name('movimentacoes.edicao');
 
 });
 

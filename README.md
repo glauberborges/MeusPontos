@@ -7,7 +7,7 @@
 ![by Glauber Borges](https://img.shields.io/badge/%20by-Glauber_Borges-informational?color=34CB79)
 ![Github - Glauber Borges](https://img.shields.io/badge/Github--%23F8952D?style=social&logo=github)
 ![Email - Glauber Borges](https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail)
-![Fale comigo no whatsapp - Glauber Borges](https://img.shields.io/badge/Whatsapp--%23F8952D?style=social&logo=whatsapp)
+[![Fale comigo no whatsapp - Glauber Borges](https://img.shields.io/badge/Whatsapp--%23F8952D?style=social&logo=whatsapp)]
 
 
 [ 💻 Projeto](#-projeto) |

@@ -7,7 +7,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/glauberborges/MeusPontos?color=34CB79)
 ![by Glauber Borges](https://img.shields.io/badge/%20by-Glauber_Borges-informational?color=34CB79)
 
-[![Linkedin - Glauber Borges](https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin)](https://github.com/glauberborges)
+[![Linkedin - Glauber Borges](https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin)](https://www.linkedin.com/in/glauber-borges-798b45b4/)
 [![Github - Glauber Borges](https://img.shields.io/badge/Github--%23F8952D?style=social&logo=github)](https://github.com/glauberborges)
 [![Email - Glauber Borges](https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail)](mailto:glauber.borges1@gmail.com)
 [![Fale comigo no whatsapp - Glauber Borges](https://img.shields.io/badge/Whatsapp--%23F8952D?style=social&logo=whatsapp)](https://api.whatsapp.com/send?phone=15996121224)

@@ -23,7 +23,7 @@ $factory->define(Movimentacoes::class, function (Faker $faker) {
         'valor' => $faker->randomFloat(2, 1, 100 ),
         'observacao' => $faker->realText(100),
         'func_id' => $faker->numberBetween($min = 1, $max = 20),
-        'user_id' => $faker->numberBetween($min = 1, $max = 2),
+        'user_id' => 1,
         'updated_at' => now(),
         'created_at' => now(),
     ];

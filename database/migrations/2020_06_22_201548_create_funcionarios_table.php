@@ -19,7 +19,6 @@ class CreateFuncionariosTable extends Migration
             $table->string('login', 100)->unique();
             $table->string('senha', 255);
             $table->decimal('saldo_atual', 10,2);
-            $table->rememberToken();
             $table->timestamps();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');

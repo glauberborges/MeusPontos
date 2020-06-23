@@ -1,79 +1,129 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+![Capa](capa.png)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/glauberborges/MeusPontos)
+![Issues](https://img.shields.io/github/issues/glauberborges/MeusPontos?color=34CB79)
+![GitHub top language](https://img.shields.io/github/languages/top/glauberborges/MeusPontos?color=34CB79)
+![Scrutinizer code quality (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/quality/b/glauberborges/MeusPontos)
+![by Glauber Borges](https://img.shields.io/badge/%20by-Glauber_Borges-informational?color=34CB79)
+![Github - Glauber Borges](https://img.shields.io/badge/Github--%23F8952D?style=social&logo=github)
+![Email - Glauber Borges](https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail)
+![Fale comigo no whatsapp - Glauber Borges](https://img.shields.io/badge/Whatsapp--%23F8952D?style=social&logo=whatsapp)
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+[ 💻 Projeto](#-projeto) |
+[ 🗂 Banco de Dados](#-banco-de-dados) |
+[ 🚀 Tecnologias](#-tecnologias) |
+[ 🛠 Ferramentas](#-ferramentas) |
+[ ⚙ Instalação](#-instalao) |
+[ 📝 Como usar](#-como-usar) 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 💻 Projeto
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Sistema de bonificação para funcionários, para não bonificar os funcionários em forma de dinheiro, foi desenvolver um sistema onde os funcionários terão um saldo de pontos e esses pontos podem ser convertidos em recarga para celular, compra de produtos, etc.
 
-## Learning Laravel
+## 🗂 Banco de Dados
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Você usar o dump [meuspontos.sql](meuspontos.sql) ou Laravel Migrations [Database: Migrations](https://laravel.com/docs/7.x/migrations).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🚀 Tecnologias
+Para esse projeto foi usado as seguintes tecnologias:
 
-## Laravel Sponsors
+- [Laravel 7.16.1](https://laravel.com/docs/7.x)
+- [Mysql](https://www.mysql.com/)
+- [UIID](https://pt.wikipedia.org/wiki/Identificador_%C3%BAnico_universal#:~:text=Um%20identificador%20%C3%BAnico%20universal%20(do,%2D%20GUID)%20tamb%C3%A9m%20%C3%A9%20utilizado.)
+- [Docker](https://www.docker.com/)
+- [Laravel-AdminLTE](https://github.com/jeroennoten/Laravel-AdminLTE)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## 🛠 Ferramentas
+- [PhpStorm](https://www.jetbrains.com/pt-br/phpstorm/)
+- [Sequel Pro](http://sequelpro.com/)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
+## ⚙️ Instalação
 
-## Contributing
+##### Clone o repositório
+```bash
+  $ git clone https://github.com/glauberborges/MeusPontos.git
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#### Instale as dependências
+```bash
+  $ cd MeusPontos
+  
+  $ composer install
+```
 
-## Code of Conduct
+#### Configurando o .env
+```bash
+  Renomeie/Copia o .env.example para .env e configure o banco de dados
+  
+  DB_CONNECTION=mysql
+  DB_HOST=127.0.0.1
+  DB_PORT=3306
+  DB_DATABASE={DATABASE}
+  DB_USERNAME={USER}
+  DB_PASSWORD={SENHA}
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Se for usar o servidor [Laradock](#servidor-opcional) use o nome do container Docker ou o IP do container em ``DB_HOST``
 
-## Security Vulnerabilities
+Para saber o nome do container do servidor do banco use `docker ps` será algo como `laradock_meuspontos_mysql_1`
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+Para saber o IP  use `docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)` será algo como `172.23.0.2`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+#### Gerar a key
+```bash
+  $ php artisan key:generate 
+```
+
+#### Migration (Opcional)
+
+Se você usou o [DUMP](#-banco-de-dados) do banco esse paço não precisa ser feito
+
+```bash
+  $ php artisan migrate
+```
+> Lembrando se tiver usando Docker esse comando deve ser feito dentro do container via SSH
+
+#### Seed (Opcional)
+
+Quer ter dados fake para fazer o teste? use o [Database: Seeding](https://laravel.com/docs/7.x/seeding#introduction)
+
+```bash
+  $ php artisan db:seed
+```
+> Lembrando se tiver usando Docker esse comando deve ser feito dentro do container via SSH
+
+#### Servidor (Opcional)
+> Se usa um servidor de sua preferência pule essa etapa
+Você pode usar seu servidor preferido ou então usar o [Laradock](https://laradock.io/)
+
+##### Laradock (Opcional)
+Para usar o Laradock você precisa ter o Docker em sua máquina [Docker](https://www.docker.com/)
+
+entre na pasta do Laradock
+```bash
+  $ cd laradock
+```
+```bash
+  Renomeie/Copia o .env.example para .env e configure o banco de dados e o Apache do laradock 
+  
+  DB_DATABASE={DATABASE}
+  DB_USERNAME={USER}
+  DB_PASSWORD={SENHA}
+  
+```
+```bash
+  $ docker-compose up -d apache2 mysql
+```
+
+## 📝 Como usar
+
+Faça um cadastro na rota ``{URL}/register`` e use e abuse! =D
+
+
+> Achou algum erro? Envie um pull request =D 
+
+> Fique à vontade para baixar e contribuir =D
+
+---

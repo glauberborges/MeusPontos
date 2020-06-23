@@ -15,37 +15,36 @@
                         <h3 class="box-title">Extrato funcionário</h3>
                     </div>
 
-
                     <table id="pageTable" class="table table-bordered table-hover">
-
                         <thead>
-                        <tr>
-                            <th>Data da movimentação</th>
-                            <th>Tipo</th>
-                            <th>Valor</th>
-                            <th>Observação</th>
-                        </tr>
+                            <tr>
+                                <th>Data da movimentação</th>
+                                <th>Tipo</th>
+                                <th>Valor</th>
+                                <th>Observação</th>
+                            </tr>
                         </thead>
 
                         <tbody>
-                        @foreach ($extrato as $item)
-                            <tr>
-                                <td>
-                                    {{ date_format($item->created_at,"d/m/Y H:i:s") }}
-                                </td>
-                                <td>
-                                    {{ $item->tipo_movimentacao }}
-                                </td>
-                                <td>
-                                    {{ $item->valor }}
-                                </td>
-                                <td>
-                                    {{ $item->observacao }}
-                                </td>
-                            </tr>
-                        @endforeach
+                            @foreach ($extrato as $item)
+                                <tr>
+                                    <td>
+                                        {{ date_format($item->created_at,"d/m/Y H:i:s") }}
+                                    </td>
+                                    <td>
+                                        {{ $item->tipo_movimentacao }}
+                                    </td>
+                                    <td>
+                                        {{ $item->valor }}
+                                    </td>
+                                    <td>
+                                        {{ $item->observacao }}
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
+
                 </div>
             </div>
         </div>
@@ -114,7 +113,5 @@
             })
 
         });
-
-
     </script>
 @stop

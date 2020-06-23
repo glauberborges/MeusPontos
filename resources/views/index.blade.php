@@ -8,7 +8,7 @@
 
 @section('content')
 
-    <h2>Bem vindo, {{Auth::user()->name}}</h2>
+    <h2>Bem vindo(a), {{Auth::user()->name}}</h2>
 @stop
 
 @section('css')

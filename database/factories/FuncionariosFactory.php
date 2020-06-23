@@ -24,6 +24,6 @@ $factory->define(Funcionarios::class, function (Faker $faker) {
         'saldo_atual' => $faker->randomFloat(2, 1, 100 ),
         'updated_at' => now(),
         'created_at' => now(),
-        'user_id' => $faker->numberBetween($min = 1, $max = 2),
+        'user_id' => 1,
     ];
 });

@@ -11,8 +11,6 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="box">
-
-
                     <div class="box-header">
                         <div class="row">
                             <div class="col-md-6"> <h3 class="box-title">Listagem dos funcionários</h3></div>
@@ -42,16 +40,15 @@
                         </div>
                     </div>
 
-
                     <table id="pageTable" class="table table-bordered table-hover">
                         <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nome</th>
-                            <th>Saldo atual</th>
-                            <th>Data Criação</th>
-                            <th>Ações</th>
-                        </tr>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Saldo atual</th>
+                                <th>Data Criação</th>
+                                <th>Ações</th>
+                            </tr>
                         </thead>
 
                         <tbody>
@@ -94,7 +91,6 @@
             </div>
         </div>
     </div>
-
 @stop
 
 @section('plugins.Datatables', true)
@@ -143,6 +139,7 @@
                             "orderable": false
                         },
                         {
+                            // Usa para filtrar a data no padrão EN
                             "targets": [4],
                             "visible": false,
                             "searchable": true,
@@ -159,7 +156,6 @@
 
             $(".btn-search--date-js").click(function (e) {
                 e.preventDefault();
-                alert($('.input-search--date-js').val())
                 myTable.column(4).search($('.input-search--date-js').val(), false, false);
                 myTable.table().draw();
             })

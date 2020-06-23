@@ -75,9 +75,7 @@
                                     @endif
                                 </div>
                             </div>
-
                         </div>
-
                         <div class="box-footer clearfix">
                             <button type="submit" class="btn btn-primary fa-pull-right">Enviar</button>
                         </div>

@@ -28,12 +28,12 @@
                                     <label for="exampleInputEmail1">Nome completo</label>
                                     <input type="text" class="form-control {{ $errors->has('nome_completo') ? 'is-invalid' : '' }} " id="exampleInputEmail1"
                                            placeholder="Digite o nome completo" name="nome_completo" id="nome_completo" value="{{(isset($funcionarios)) ? $funcionarios->nome_completo :  old('nome_completo')  }}">
+                                    @if($errors->has('nome_completo'))
+                                        <div class="invalid-feedback">
+                                            <strong>{{ $errors->first('nome_completo') }}</strong>
+                                        </div>
+                                    @endif
                                 </div>
-                                @if($errors->has('nome_completo'))
-                                    <div class="invalid-feedback">
-                                        <strong>{{ $errors->first('nome_completo') }}</strong>
-                                    </div>
-                                @endif
                             </div>
 
                             <div class="col-md-6">

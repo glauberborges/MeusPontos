@@ -3,27 +3,24 @@
 namespace App\Http\Controllers;
 
 use App\Funcionarios;
+use App\User;
 use function dd;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use function md5;
-use PhpParser\Node\Expr\New_;
 
 class FuncionariosController extends Controller
 {
     public function index()
     {
-
-        $data_tables = Funcionarios::where("user_id", Auth::user()->id)->get();
+        $data_tables = User::find(Auth::user()->id)->funcionario()->get();
 
         return view('funcionarios.index', compact('data_tables'));
     }
 
     public function extrato($id)
     {
-
         $funcionario = Funcionarios::find($id);
 
         $extrato = $funcionario->movimentacoes()->get();
@@ -33,7 +30,6 @@ class FuncionariosController extends Controller
 
     public function novoForm()
     {
-
         return view('funcionarios.form');
     }
 
@@ -51,7 +47,6 @@ class FuncionariosController extends Controller
         ]);
 
         if($validator->fails()) {
-
             return redirect()
                 ->back()
                 ->withErrors($validator)
@@ -65,7 +60,6 @@ class FuncionariosController extends Controller
             $funcionario->saldo_atual       = (isset($request->saldo_atual) ? $request->saldo_atual : 0);
             $funcionario->user_id           = Auth::user()->id;
             $funcionario->save();
-
         }
 
         return redirect()
@@ -92,20 +86,17 @@ class FuncionariosController extends Controller
         ]);
 
         if($validator->fails()) {
-
             return redirect()
                 ->back()
                 ->withErrors($validator)
                 ->withInput();
         }else{
-
             $funcionario = Funcionarios::find($request->id);
             $funcionario->nome_completo     = $request->nome_completo;
             $funcionario->login             = $request->login;
             $funcionario->senha             = Hash::make($request->senha);
             $funcionario->saldo_atual       = $request->saldo_atual;
             $funcionario->save();
-
         }
 
         return redirect()

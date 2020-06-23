@@ -11,8 +11,6 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="box">
-
-
                     <div class="box-header">
                         <div class="row">
                             <div class="col-md-6"> <h3 class="box-title">Listagem das Movimentações</h3></div>
@@ -38,7 +36,6 @@
                             <div class="col-md-4"> <p>Buscar por funcionário </p> <input type="text"  class="input-search--nome-js">  <button class="btn btn-info btn-search--nome-js">Buscar</button> </div>
                             <div class="col-md-4"> <p>Buscar por data </p> <input type="date"  class="input-search--date-js">  <button class="btn btn-info btn-search--date-js">Buscar</button> </div>
                             <div class="col-md-4"> <p>Buscar por tipo </p> 
-                                {{--<input type="text"  class="input-search--tipo-js">--}}
                                 <select name="" id="" class="form-controlx input-search--tipo-js">
                                     <option value=""> Selecione </option>
                                     <option value="entrada" >Entrada</option>
@@ -56,49 +53,49 @@
 
                     <table id="pageTable" class="table table-bordered table-hover">
                         <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Tipo</th>
-                            <th>Valor</th>
-                            <th>funcionário</th>
-                            <th>Observação</th>
-                            <th>Data</th>
-                        </tr>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tipo</th>
+                                <th>Valor</th>
+                                <th>funcionário</th>
+                                <th>Observação</th>
+                                <th>Data</th>
+                            </tr>
                         </thead>
 
                         <tbody>
-                        @foreach ($data_tables as $item)
-                            <tr>
-                                <td>
-                                    {{ $item->id }}
-                                </td>
-                                <td>
-                                    {{ $item->tipo_movimentacao }}
-                                </td>
-                                <td>
-                                    {{ $item->valor }}
-                                </td>
-                                <td>
-                                    {{ $item->funcionario->nome_completo }}
-                                </td>
-                                <td>
-                                    {{ $item->observacao }}
-                                </td>
-                                <td>
-                                    {{ date_format($item->updated_at,"d/m/Y") }}
-                                </td>
-                                <td>
-                                    {{ date_format($item->updated_at,"Y-m-d") }}
-                                </td>
-                            </tr>
-                        @endforeach
+                            @foreach ($data_tables as $item)
+                                <tr>
+                                    <td>
+                                        {{ $item->id }}
+                                    </td>
+                                    <td>
+                                        {{ $item->tipo_movimentacao }}
+                                    </td>
+                                    <td>
+                                        {{ $item->valor }}
+                                    </td>
+                                    <td>
+                                        {{ $item->funcionario->nome_completo }}
+                                    </td>
+                                    <td>
+                                        {{ $item->observacao }}
+                                    </td>
+                                    <td>
+                                        {{ date_format($item->updated_at,"d/m/Y") }}
+                                    </td>
+                                    <td>
+                                        {{--Coluna oculta apenas para busca--}}
+                                        {{ date_format($item->updated_at,"Y-m-d") }}
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
-
 @stop
 
 @section('plugins.Datatables', true)
@@ -187,7 +184,5 @@
             })
 
         });
-
-
     </script>
 @stop

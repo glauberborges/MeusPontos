@@ -81,7 +81,7 @@ Para saber o IP  use `docker inspect -f '{{.Name}} - {{range .NetworkSettings.Ne
 
 #### Migration (Opcional)
 
-Se você usou o [DUMP](#-banco-de-dados) do banco esse paço não precisa ser feito
+Se você usou o [DUMP](#-banco-de-dados) do banco esse passo não precisa ser feito
 
 ```bash
   $ php artisan migrate
